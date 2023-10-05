@@ -18,6 +18,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:src="@drawable/seneca"
+                />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,6 +52,9 @@
                 android:textSize="28sp"
                 android:text="For this hackathon, you can register a team for participation. Every team is of size 3 to 5 members. I hope you have fun with this Hackathon and welcome to the event!"
                 />
+
+
+
         </LinearLayout>
     </LinearLayout>
 
