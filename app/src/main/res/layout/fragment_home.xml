@@ -44,15 +44,21 @@
 
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/homeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="23dp"
+                android:text="For this hackathon, you can register a team for participation. Every team is of size 3 to 5 members. I hope you have fun with this Hackathon and welcome to the event!"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="23dp"
-                android:textAlignment="center"
-                android:textSize="28sp"
-                android:text="For this hackathon, you can register a team for participation. Every team is of size 3 to 5 members. I hope you have fun with this Hackathon and welcome to the event!"
-                />
-
+                android:max="4"
+                android:paddingTop="50dp"
+                android:progress="0" />
 
 
         </LinearLayout>
