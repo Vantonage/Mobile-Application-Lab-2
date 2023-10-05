@@ -1,7 +1,6 @@
 package com.example.assignment_2;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,21 +20,21 @@ public class memberRegistration extends AppCompatActivity {
         setContentView(R.layout.activity_member_registration);
 
         Intent intent = getIntent();
-        String receivedMessage = intent.getStringExtra("edit_text");
-        String m = intent.getStringExtra("g");
-        String name = intent.getStringExtra("message");
+        String teamName = intent.getStringExtra("team");
+        String teamSize = intent.getStringExtra("size");
         // Display the received data in a TextView or perform any other actions
         TextView textView = findViewById(R.id.textView);
         //textView.setText(receivedMessage);
-        m = m.substring(m.length()-1);
-        textView.setText(m + receivedMessage);
+        teamSize = teamSize.substring(teamSize.length()-1);
+        textView.setText(teamName);
 
         LinearLayout layout = findViewById(R.id.bob);
 
-        int size = Integer.parseInt(m);
+        int size = Integer.parseInt(teamSize);
         for (int i = 0; i < size; i++){
             EditText editText = new EditText(this);
             editText.setId(i);
+            editText.setPadding(50, 50, 50, 50);
             editText.setHint("Member " + (i + 1));
             layout.addView(editText);
         }
@@ -59,7 +58,8 @@ public class memberRegistration extends AppCompatActivity {
                 ArrayList<String> arrayListContent = new ArrayList<>(content);
 
 
-                newIntent.putExtra("edit", arrayListContent);
+                newIntent.putExtra("members", arrayListContent);
+                newIntent.putExtra("teamName", teamName);
                 startActivity(newIntent);
             }
         });

@@ -5,13 +5,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AcknowledgeActivity">
 
-
     <TextView
+        android:id="@+id/team"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lol"
-        />
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <Button
+        android:id="@+id/addTeam"
+        android:onClick="addTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add team" />
+
 
 </LinearLayout>
