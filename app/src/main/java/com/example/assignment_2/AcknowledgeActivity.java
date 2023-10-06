@@ -52,6 +52,7 @@ public class AcknowledgeActivity extends AppCompatActivity {
         String team = "Team " + teamName + " has been registered";
         Toast.makeText(this, team,Toast.LENGTH_SHORT).show();
 
+        // After the progress is 120, 6 seconds, redirect user to home page
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {

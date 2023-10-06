@@ -38,7 +38,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="List of teams"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout

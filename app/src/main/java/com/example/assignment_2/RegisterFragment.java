@@ -43,7 +43,6 @@ public class RegisterFragment extends Fragment {
                 intent.putExtra("team", teamName);
                 intent.putExtra("size", size);
 
-                // Start the activity with the intent
                 startActivity(intent);
 
             }

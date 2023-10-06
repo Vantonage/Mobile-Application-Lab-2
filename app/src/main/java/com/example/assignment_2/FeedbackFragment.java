@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class FeedbackFragment extends Fragment {
@@ -17,6 +18,7 @@ public class FeedbackFragment extends Fragment {
         // Inflate the layout for this fragment
         View root = inflater.inflate(R.layout.fragment_feedback, container, false);
 
+        EditText editText = root.findViewById(R.id.feedbackEditText);
         Button sendFeedback = root.findViewById(R.id.feedbackButton);
 
         sendFeedback.setOnClickListener(new View.OnClickListener(){
@@ -24,6 +26,8 @@ public class FeedbackFragment extends Fragment {
             public void onClick(View v){
                 String feedback = "Feedback sent";
                 Toast.makeText(getContext(), feedback, Toast.LENGTH_SHORT).show();
+                editText.setText("");
+
             }
         });
         return root;

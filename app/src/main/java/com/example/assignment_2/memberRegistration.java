@@ -22,9 +22,9 @@ public class memberRegistration extends AppCompatActivity {
         Intent intent = getIntent();
         String teamName = intent.getStringExtra("team");
         String teamSize = intent.getStringExtra("size");
-        // Display the received data in a TextView or perform any other actions
+
         TextView textView = findViewById(R.id.textView);
-        //textView.setText(receivedMessage);
+
         teamSize = teamSize.substring(teamSize.length()-1);
         textView.setText(teamName);
 

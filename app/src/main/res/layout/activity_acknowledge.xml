@@ -29,10 +29,11 @@
 
     <Button
         android:id="@+id/addTeam"
-        android:onClick="addTeam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="addTeam"
         android:text="Add team" />
 
     <LinearLayout
